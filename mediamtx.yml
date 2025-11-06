@@ -1,0 +1,11 @@
+api: yes
+apiAddress: :9997
+rtspAddress: :8554
+webrtc: yes
+paths:
+  cam-001:
+    source: rtsp://admin:12345@192.168.1.28:554/live
+    sourceOnDemand: yes
+  cam-002:
+    source: rtsp://admin:12345@192.168.1.10:554/live
+    sourceOnDemand: yes
