@@ -15,5 +15,6 @@ if (!fs.existsSync("./data/cameras.json")) fs.writeFileSync("./data/cameras.json
 generateMediamtxConfig();
 app.use('/api',  require('./routes/Dashboard.api'));
 app.use('/api/incidents',require('./routes/Incidents.route'))
+app.use('/api/analytics', require('./routes/analytics.js'))
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`RefineVMS API listening on ${PORT}`));
