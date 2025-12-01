@@ -15,7 +15,7 @@ const generateMediamtxConfig = () => {
 
   for (const cam of cams) {
     cfg.paths[cam.id.toLowerCase()] = {
-      source: `rtsp://${cam.username}:${cam.password}@${cam.ip}:554/live`,
+      source: `rtsp://${cam.username}:${cam.password}@${cam.ip}:8554/live`,
       sourceOnDemand: "yes",
     };
   }

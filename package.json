@@ -11,11 +11,13 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.0",
     "axios": "^1.13.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "prisma": "^6.19.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

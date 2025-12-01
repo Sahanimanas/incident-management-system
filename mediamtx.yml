@@ -4,8 +4,128 @@ rtspAddress: :8554
 webrtc: yes
 paths:
   cam-001:
-    source: rtsp://admin:12345@192.168.1.28:554/live
+    source: rtsp://admin:12345@192.168.1.23:8554/live
     sourceOnDemand: yes
   cam-002:
-    source: rtsp://admin:12345@192.168.1.10:554/live
+    source: rtsp://admin:12345@192.168.1.36:8554/live
+    sourceOnDemand: yes
+  cam-003:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-004:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-005:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-006:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-007:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-008:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-009:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-010:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-011:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-012:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-013:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-014:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-015:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-016:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-017:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-018:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-019:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-020:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-021:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-022:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-023:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-024:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-025:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-026:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-027:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-028:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-029:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-030:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-031:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-032:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-033:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-034:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-035:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-036:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-037:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-038:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-039:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-040:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-041:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
+    sourceOnDemand: yes
+  cam-042:
+    source: rtsp://admin:12345@192.168.1.23:8554/live
     sourceOnDemand: yes

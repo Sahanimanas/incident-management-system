@@ -1,13 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 
-// Mock Data
-const summary = {
-  critical: 3,
-  major: 8,
-  minor: 15,
-  resolved: 12,
-};
 
 const incidents = [
   {
@@ -130,15 +125,61 @@ const incidents = [
   },
 ];
 
-// API Endpoints
-router.get("/", (req, res) => {
-  res.json({ summary, incidents });
+// Summary Function
+async function getSummary() {
+  const critical = await prisma.alert.count({
+    where: { severity: "CRITICAL" },
+  });
+
+  const major = await prisma.alert.count({
+    where: { severity: "MAJOR" },
+  });
+
+  const minor = await prisma.alert.count({
+    where: { severity: "MINOR" },
+  });
+
+  const info = await prisma.alert.count({
+    where: { severity: "INFO" },
+  });
+
+  return {
+    critical,
+    major,
+    minor,
+    resolved: info,   // you named INFO as resolved
+  };
+}
+
+// GET summary (LIVE)
+router.get("/", async (req, res) => {
+  try {
+    const summary = await getSummary();
+    res.json({ summary,incidents });
+  } catch (err) {
+    console.error("Summary Error:", err);
+    res.status(500).json({ error: "Failed to fetch summary" });
+  }
 });
 
-router.get("/:id", (req, res) => {
-  const incident = incidents.find((i) => i.id === req.params.id);
-  if (!incident) return res.status(404).json({ error: "Incident not found" });
-  res.json(incident);
+// Get alert by ID (from database)
+router.get("/:id", async (req, res) => {
+  try {
+    const id = Number(req.params.id);
+
+    const alert = await prisma.alert.findUnique({
+      where: { id },
+    });
+
+    if (!alert) {
+      return res.status(404).json({ error: "Alert not found" });
+    }
+
+    res.json(alert);
+  } catch (err) {
+    console.error("Get by ID Error:", err);
+    res.status(500).json({ error: "Failed to fetch incident" });
+  }
 });
 
 module.exports = router;
